@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Catering Menus & Prices — Buffets, Box Lunches, Platters | Sunrise Catering, Walnut Creek</title>
+<meta name="description" content="Every Sunrise Catering menu with prices: continental and hot breakfast buffets, box lunches, lunch buffets, California comfort food, party platters, salad bowls, hors d'oeuvres, bakery and desserts.">
+<meta property="og:title" content="Catering Menus & Prices — Buffets, Box Lunches, Platters | Sunrise Catering, Walnut Creek">
+<meta property="og:description" content="Every Sunrise Catering menu with prices: continental and hot breakfast buffets, box lunches, lunch buffets, California comfort food, party platters, salad bowls, hors d'oeuvres, bakery and desserts.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero-breakfast-burrito.jpg">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Montserrat:wght@500;600;700&display=swap">
+<style>
+/* Layout concept: a morning table — cream paper, brick-red serif headings, a sunrise-gold call to action, menus set like a printed card with price leaders. */
+:root{
+  --cream:#FBF7F0; --sand:#F1E8D8; --paper:#FFFFFF; --ink:#2B2623; --muted:#6E635A;
+  --brick:#A5331C; --brick-dark:#84271A; --gold:#B8892E; --gold-dark:#8C6A24;
+  --sun:#F5A742; --sun-dark:#E08E1F; --line:#E4D9C6; --shadow:0 10px 30px rgba(74,48,24,.12);
+  --display:"Fraunces","Georgia","Times New Roman",serif; --body:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --maxw:1160px; --radius:14px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;font-weight:500}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brick);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--brick-dark)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.15;margin:0 0 .4em;color:var(--brick);text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,4.6vw,3.4rem);font-variation-settings:"opsz" 72,"SOFT" 40}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--body);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark);margin:0 0 .8em}
+.lede{font-size:1.1rem;color:var(--muted);max-width:60ch}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
+.section{padding-block:clamp(2.6rem,6vw,4.5rem)}
+.section.sand{background:var(--sand)}
+.section.paper{background:var(--paper)}
+.section-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem 2rem;margin-bottom:1.8rem}
+.section-head p{margin:0}
+.grid{display:grid;gap:1.4rem}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid.four{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.grid>*{min-width:0}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.35rem;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;border:2px solid transparent;cursor:pointer;line-height:1.2;transition:background .15s,color .15s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn-sun{background:var(--sun);color:#3A2408;border-color:var(--sun)}
+.btn-sun:hover{background:var(--sun-dark);border-color:var(--sun-dark);color:#2B1A05}
+.btn-brick{background:var(--brick);color:#fff;border-color:var(--brick)}
+.btn-brick:hover{background:var(--brick-dark);border-color:var(--brick-dark);color:#fff}
+.btn-outline{background:transparent;color:var(--brick);border-color:var(--brick)}
+.btn-outline:hover{background:var(--brick);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn.small{padding:.55rem .95rem;font-size:.85rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+/* Top bar + header */
+.topbar{background:var(--brick);color:#FBE9DF;font-size:.8rem;font-weight:600;letter-spacing:.02em}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;justify-content:center;padding-block:.45rem;text-align:center}
+.topbar span{white-space:nowrap}
+@media (max-width:600px){.topbar span:nth-child(2),.topbar span:nth-child(4){display:none}}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(251,247,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
+.brand img{width:52px;height:52px;flex:0 0 auto}
+.brand b{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.1;color:var(--brick);display:block;letter-spacing:-.01em}
+.brand small{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);font-weight:700}
+.nav{display:flex;align-items:center;gap:.2rem}
+.nav a{padding:.55rem .75rem;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.93rem;white-space:nowrap}
+.nav a:hover,.nav a[aria-current=page]{background:var(--sand);color:var(--brick)}
+.nav .btn{margin-left:.5rem}
+.nav-toggle{display:none;background:none;border:2px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--ink);align-items:center;justify-content:center}
+.nav-toggle svg{width:22px;height:22px}
+@media (max-width:900px){
+  .nav-toggle{display:inline-flex}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:.6rem 20px 1rem;gap:.15rem;box-shadow:var(--shadow)}
+  .nav.open{display:flex}
+  .nav a{padding:.8rem .6rem;font-size:1rem}
+  .nav .btn{margin:.5rem 0 0;justify-content:center}
+}
+/* Hero */
+.hero{padding-block:clamp(2rem,5vw,4rem)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+.hero-copy h1{margin-bottom:.5em}
+.hero-copy .lede{margin-bottom:1.5rem}
+.hero-media{position:relative;min-width:0}
+.hero-media img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/10;object-fit:cover;width:100%}
+.hero-chip{position:absolute;left:16px;bottom:16px;background:rgba(251,247,240,.96);border-radius:999px;padding:.45rem .9rem;font-size:.82rem;font-weight:700;color:var(--brick);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.4rem;padding:0;list-style:none;color:var(--muted);font-size:.9rem;font-weight:600}
+.facts li{display:flex;align-items:center;gap:.45rem}
+.facts svg{width:18px;height:18px;color:var(--gold);flex:0 0 auto}
+@media (max-width:800px){.hero .wrap{grid-template-columns:1fr}.hero-media{order:-1}}
+/* Info strip */
+.strip{background:var(--paper);border-block:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem 2rem;padding-block:1.2rem}
+.strip-item{display:flex;gap:.8rem;align-items:flex-start;min-width:0}
+.strip-item svg{width:26px;height:26px;color:var(--brick);flex:0 0 auto;margin-top:.15rem}
+.strip-item b{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark)}
+.strip-item span{font-size:.95rem}
+.strip-item a{font-weight:600}
+/* Cards */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .card-body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card h3{margin:0;font-size:1.15rem}
+.card .price{font-family:var(--body);font-weight:700;color:var(--gold-dark);font-variant-numeric:tabular-nums}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+.card .tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brick)}
+.card-row{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+a.card{text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+/* Story */
+.story .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.story img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:1;object-fit:cover}
+.story ul{padding-left:1.1rem;margin:0 0 1.2rem;color:var(--muted)}
+.story li{margin-bottom:.35rem}
+@media (max-width:800px){.story .wrap{grid-template-columns:1fr}}
+/* Mosaic */
+.mosaic{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:.7rem;min-width:0}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.mosaic img:first-child{grid-row:1/3;aspect-ratio:4/3}
+.mosaic img:not(:first-child){aspect-ratio:4/3}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+@media (max-width:800px){.split{grid-template-columns:1fr}}
+/* Steps / facts list */
+.steps{list-style:none;padding:0;margin:0 0 1.4rem;display:grid;gap:.8rem}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start}
+.steps .n{width:34px;height:34px;border-radius:50%;background:var(--sand);color:var(--brick);font-weight:700;display:grid;place-items:center;font-family:var(--display);font-size:1.05rem}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:.93rem}
+/* Awards */
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:1rem}
+.award{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.award b{display:block;font-family:var(--display);font-size:1.3rem;color:var(--brick);font-weight:600;line-height:1.1}
+.award span{font-size:.86rem;color:var(--muted)}
+.award small{display:block;margin-top:.4rem;font-size:.78rem}
+/* Gift band */
+.band{background:var(--brick);color:#FBE9DF;border-radius:var(--radius);padding:clamp(1.4rem,3vw,2.4rem);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem}
+.band h2{color:#fff;margin:0 0 .2em}
+.band p{margin:0;color:#F6D9CC;max-width:52ch}
+/* Location band */
+.geo{position:relative;background:#3b2a1e url(img/walnut-creek.jpg) center/cover no-repeat;color:#fff;isolation:isolate}
+.geo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,28,16,.86),rgba(43,28,16,.55));z-index:-1}
+.geo .wrap{padding-block:clamp(2.5rem,6vw,4rem)}
+.geo h2{color:#fff}
+.geo p{color:#F3E6D8;max-width:58ch}
+.geo .btn-ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.geo .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+/* Footer */
+.site-footer{background:#2B1C12;color:#E9DCCB;padding-block:3rem 5.5rem;font-size:.92rem}
+.site-footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2rem}
+.site-footer h4{color:#F5C9B5;font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.8rem}
+.site-footer a{color:#F7E7D6}
+.site-footer p{margin:0 0 .5em}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer li{margin-bottom:.4rem}
+.site-footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);padding-top:1.2rem;color:#BFAE9A;font-size:.8rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+.site-footer .brand-foot{display:flex;gap:.8rem;align-items:center;margin-bottom:.8rem}
+.site-footer .brand-foot img{width:60px;height:60px}
+.site-footer .brand-foot b{font-family:var(--display);font-size:1.3rem;color:#fff;font-weight:600;display:block;line-height:1.1}
+.site-footer .brand-foot small{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#E6B98A;font-weight:700}
+@media (max-width:900px){.site-footer .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.site-footer .wrap{grid-template-columns:1fr}}
+/* Sticky mobile bar */
+.mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--paper);border-top:1px solid var(--line);padding:.55rem 12px calc(.55rem + env(safe-area-inset-bottom,0px));gap:.5rem}
+.mobile-bar .btn{flex:1;padding:.7rem .5rem;font-size:.85rem}
+@media (max-width:760px){.mobile-bar{display:flex}}
+/* Menu pages */
+.menu-nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 68px);z-index:40;background:var(--cream);border-bottom:1px solid var(--line)}
+.menu-nav .wrap{display:flex;gap:.4rem;overflow-x:auto;padding-block:.55rem;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.menu-nav a{flex:0 0 auto;padding:.45rem .85rem;border-radius:999px;border:1px solid var(--line);background:var(--paper);text-decoration:none;color:var(--ink);font-weight:600;font-size:.83rem;white-space:nowrap}
+.menu-nav a:hover{border-color:var(--brick);color:var(--brick)}
+.menu-section{padding-block:2.2rem;scroll-margin-top:130px}
+.menu-section+.menu-section{border-top:1px solid var(--line)}
+.menu-section .intro{color:var(--muted);font-size:.95rem;max-width:60ch;margin-bottom:1.2rem}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:.4rem 2.5rem}
+.item{display:grid;grid-template-columns:1fr auto;gap:.1rem .8rem;padding:.65rem 0;border-bottom:1px dotted var(--line);align-content:start}
+.item .name{font-weight:700;font-size:1rem}
+.item .price{font-weight:700;color:var(--gold-dark);font-variant-numeric:tabular-nums;text-align:right;max-width:58%}
+.item .desc{grid-column:1/-1;color:var(--muted);font-size:.9rem;line-height:1.5}
+.item .desc em{color:var(--brick);font-style:normal;font-weight:600}
+.tagpill{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;padding:.1rem .4rem;border:1px solid var(--gold);color:var(--gold-dark);border-radius:6px;vertical-align:middle;margin-left:.3rem}
+.legend{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;font-size:.85rem;color:var(--muted);margin:1rem 0 0}
+.menu-photo{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0 1.4rem}
+.menu-photo img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.menu-hero{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end}
+@media (max-width:700px){.menu-hero{grid-template-columns:1fr}}
+.note{background:var(--sand);border-left:4px solid var(--gold);padding:.9rem 1.1rem;border-radius:8px;font-size:.92rem;color:var(--ink)}
+.note b{color:var(--brick)}
+/* Forms */
+.form{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.2rem,3vw,2rem);box-shadow:var(--shadow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.1rem}
+.form-grid .full{grid-column:1/-1}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}}
+label{display:block;font-size:.82rem;font-weight:700;margin-bottom:.3rem;color:var(--ink)}
+label span{color:var(--muted);font-weight:500}
+input,select,textarea{width:100%;font:inherit;font-size:.95rem;padding:.7rem .8rem;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(245,167,66,.3)}
+textarea{min-height:110px;resize:vertical}
+.check{display:flex;gap:.6rem;align-items:flex-start;font-size:.85rem;font-weight:500;color:var(--muted)}
+.check input{width:auto;margin-top:.2rem}
+.form-note{font-size:.82rem;color:var(--muted);margin:.6rem 0 0}
+.error{color:var(--brick);font-size:.85rem;font-weight:600;margin-top:.5rem}
+.confirm{background:var(--sand);border-radius:12px;padding:1.2rem;margin-top:1rem}
+.confirm textarea{min-height:190px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;margin-block:.6rem}
+/* Contact block */
+.contact-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem 1.4rem}
+.contact-card h3{margin-bottom:.6rem}
+.copyline{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;margin:.3rem 0}
+.copyline code{font-family:var(--body);font-size:1.05rem;font-weight:700;color:var(--ink);background:none;user-select:all;overflow-wrap:anywhere;min-width:0}
+.copyline .btn{padding:.35rem .7rem;font-size:.75rem}
+.hours-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours-table th,.hours-table td{text-align:left;padding:.55rem .4rem;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours-table th{font-weight:700;color:var(--ink)}
+.hours-table td:last-child{text-align:right;white-space:nowrap}
+.faq details{border-bottom:1px solid var(--line);padding:.6rem 0}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:1.4rem;color:var(--gold);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);margin:.5rem 0 .3rem;font-size:.93rem}
+.page-head{padding-block:clamp(2rem,5vw,3.5rem) 1.5rem}
+.page-head .lede{margin-top:.4rem}
+.breadcrumb{font-size:.82rem;color:var(--muted);margin-bottom:.8rem}
+.breadcrumb a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:.6rem 1rem;border-radius:999px;font-size:.85rem;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:70}
+.toast.show{opacity:1}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.draft-note{background:#FFF4DE;border:1px dashed var(--sun-dark);color:#5A3A0B;font-size:.8rem;padding:.5rem 1rem;text-align:center}
+.draft-note a{color:#5A3A0B}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Restaurant", "Caterer"], "@id": "https://www.sunrisebistrocatering.com/#business", "name": "Sunrise Bistro & Catering", "alternateName": ["Sunrise Bistro", "Sunrise Catering"], "url": "https://www.sunrisebistrocatering.com/", "image": ["https://www.sunrisebistrocatering.com/img/hero-breakfast-burrito.jpg", "https://www.sunrisebistrocatering.com/img/caesars-goddess-salad.jpg", "https://www.sunrisebistrocatering.com/img/founders.jpg"], "logo": "https://www.sunrisebistrocatering.com/img/logo-maroon.png", "telephone": "+1-925-930-0122", "email": "cateringorders@sunrisebistrocatering.com", "address": {"@type": "PostalAddress", "streetAddress": "1559 Botelho Drive", "addressLocality": "Walnut Creek", "addressRegion": "CA", "postalCode": "94596", "addressCountry": "US"}, "servesCuisine": ["Breakfast", "Brunch", "American"], "priceRange": "$$", "acceptsReservations": "False", "menu": "https://www.sunrisebistrocatering.com/menu.html", "foundingDate": "1981", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "07:00", "closes": "15:00"}], "specialOpeningHoursSpecification": [{"@type": "OpeningHoursSpecification", "validFrom": "2026-11-26", "validThrough": "2026-11-26", "opens": "00:00", "closes": "00:00"}, {"@type": "OpeningHoursSpecification", "validFrom": "2026-12-25", "validThrough": "2026-12-25", "opens": "00:00", "closes": "00:00"}, {"@type": "OpeningHoursSpecification", "validFrom": "2027-01-01", "validThrough": "2027-01-01", "opens": "00:00", "closes": "00:00"}, {"@type": "OpeningHoursSpecification", "validFrom": "2027-07-04", "validThrough": "2027-07-04", "opens": "00:00", "closes": "00:00"}], "contactPoint": [{"@type": "ContactPoint", "contactType": "Bistro and takeout", "telephone": "+1-925-930-0122", "areaServed": "US"}, {"@type": "ContactPoint", "contactType": "Catering office", "telephone": "+1-925-930-6323", "email": "cateringorders@sunrisebistrocatering.com", "hoursAvailable": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}}], "potentialAction": {"@type": "OrderAction", "target": "https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr"}, "sameAs": ["https://www.yelp.com/biz/sunrise-bistro-walnut-creek-5", "https://www.yelp.com/biz/sunrise-catering-walnut-creek-2", "https://www.instagram.com/sunrisebistro/", "https://www.tiktok.com/@sunrisebistro/"]}</script>
+</head>
+<body>
+
+<div class="draft-note">Draft redesign for review — not the live site. Prices and hours are from the menus and answers the team supplied on Sept 29, 2026.</div>
+<div class="topbar"><div class="wrap"><span>Open daily 7 AM–3 PM</span><span>1559 Botelho Drive, Walnut Creek</span><span>Bistro (925) 930-0122</span><span>Catering (925) 930-6323</span></div></div>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Sunrise Bistro &amp; Catering home"><img src="img/logo-maroon.png" alt="" width="52" height="52"><span><b>Sunrise</b><small>Bistro &amp; Catering</small></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <nav class="nav" id="site-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Bistro Menu</a>
+    <a href="catering.html" aria-current="page">Catering</a>
+    <a href="hours.html">Hours &amp; Location</a>
+    <a href="https://order.toasttab.com/egiftcards/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Gift Cards</a>
+    <a class="btn btn-sun" href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order Online</a>
+  </nav>
+</div></header>
+<main id="main">
+<section class="page-head"><div class="wrap menu-hero">
+  <div>
+    <p class="breadcrumb"><a href="index.html">Home</a> › <a href="catering.html">Catering</a> › Menus</p>
+    <h1>Catering Menus</h1>
+    <p class="lede">Prices are per person (pp), per piece or per platter as marked. Order by noon the business day before; delivery daily 7 AM–4 PM, pickup 7 AM–3 PM. Buffets serve 15 or more unless noted and include paper and plastic goods; any buffet can be packaged individually for $3 per person.</p>
+    <div class="legend"><span><span class="tagpill">GF</span> gluten-free</span><span><span class="tagpill">V</span> vegan</span><span>Prices effective 2026 and subject to change. Tell us about allergies when you order.</span></div>
+  </div>
+  <div class="btn-row"><a class="btn btn-sun" href="catering.html#quote">Request a quote</a><a class="btn btn-ghost" href="catering.html">How catering works</a></div>
+</div></section>
+
+<nav class="menu-nav" aria-label="Catering menu sections"><div class="wrap">
+  <a href="#breakfast-buffets">Breakfast buffets</a><a href="#breakfast-a-la-carte">Breakfast à la carte</a><a href="#box-lunches">Box lunches</a><a href="#buffets">Lunch buffets</a><a href="#comfort">Comfort food</a><a href="#platters">Party platters</a><a href="#salad-bowls">Salad bowls</a><a href="#hors-doeuvres">Hors d'oeuvres</a><a href="#bakery">Bakery &amp; desserts</a><a href="#beverages">Beverages</a>
+</div></nav>
+
+<div class="wrap">
+
+<section class="menu-section" id="breakfast-buffets">
+  <h2>Breakfast Buffets</h2>
+  <p class="intro">15-person minimum. Paper and plastic goods included.</p>
+  <div class="menu-photo"><img src="img/pastry-box.jpg" alt="Box of house-baked pastries" loading="lazy" width="682" height="512"><img src="img/spinach-mushroom-quiche.jpg" alt="Spinach and mushroom quiche" loading="lazy" width="682" height="512"></div>
+  <h3>Continental</h3>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Kick Start</span><span class="price">$10.50 pp</span><span class="desc">A variety of pastries and fresh fruit.</span></div>
+    <div class="item"><span class="name">Fog Lifter</span><span class="price">$16 pp</span><span class="desc">A variety of pastries, fresh fruit and quiche.</span></div>
+  </div>
+  <h3 style="margin-top:1.4rem">Hot breakfast</h3>
+  <div class="menu-grid">
+    <div class="item"><span class="name">French Toast or Pancakes</span><span class="price">$17.50 pp</span><span class="desc">Pancakes, whole grain pancakes or cinnamon swirl French toast with bacon or sausage, fruit, syrup and butter.</span></div>
+    <div class="item"><span class="name">Traditional</span><span class="price">$20 pp</span><span class="desc">Quiche or scrambled eggs with bacon or sausage, breakfast potatoes, fruit and pastries.</span></div>
+    <div class="item"><span class="name">Joe's Special Scramble</span><span class="price">$17 pp</span><span class="desc">Scramble of Italian sausage, mushroom, spinach, green onions and parmesan with breakfast potatoes, fruit and pastries.</span></div>
+    <div class="item"><span class="name">Brunch Special</span><span class="price">$21 pp</span><span class="desc">Cheese blintz with strawberry jam, quiche, fresh fruit, seasonal arugula salad and pastries.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="breakfast-a-la-carte">
+  <h2>Breakfast à la Carte</h2>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Breakfast Burrito</span><span class="price">$15.50 each</span><span class="desc">Scrambled eggs, cheese and breakfast potatoes with bacon, ham, sausage or veggie in a regular or whole wheat tortilla, with salsa. <em>Avocado $14 pint · Sour cream $10 pint</em></span></div>
+    <div class="item"><span class="name">Breakfast Sandwich</span><span class="price">$14 each</span><span class="desc">Cheddar and scrambled eggs on a house-made biscuit with bacon, Canadian bacon or sausage. Two combinations max per order.</span></div>
+    <div class="item"><span class="name">Standard Pastries</span><span class="price">$4 each</span><span class="desc">Morning buns, cinnamon rolls, muffins, coffee cake, chocolate chip banana bread, power scone, zucchini bread, plain croissant, berry scone.</span></div>
+    <div class="item"><span class="name">Croissants</span><span class="price">half $5.50 · full $7.50</span><span class="desc">Ham &amp; cheddar; sausage, spinach &amp; jack; broccoli, zucchini, mushroom &amp; jack; chocolate.</span></div>
+    <div class="item"><span class="name">Yogurt &amp; Berry Parfait Bowl</span><span class="price">serves 20 $80 · serves 40 $130</span><span class="desc">Layers of fresh berries, organic plain low-fat yogurt, berry compote and Sunrise granola.</span></div>
+    <div class="item"><span class="name">Bowl of Berries</span><span class="price">serves 20 $100 · serves 40 $165</span><span class="desc">Fresh strawberries, blackberries and blueberries.</span></div>
+    <div class="item"><span class="name">Quiche</span><span class="price">9" round $45 · pan of 20 $80 · pan of 30 $110</span><span class="desc">Lorraine, spinach &amp; mushroom, spinach &amp; bacon, broccoli &amp; cheddar, zucchini &amp; jack.</span></div>
+    <div class="item"><span class="name">Add-ons</span><span class="price"></span><span class="desc">Thick-cut bacon (3 pc.) or sausage (2 pc.) $7 · Chicken apple sausage (2 pc.) $7.50 · Breakfast potatoes $11/lb · Pancake or cinnamon swirl French toast (1 pp) $6.50 · Scrambled eggs (2) $5.50</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="box-lunches">
+  <h2>Box Lunches</h2>
+  <p class="intro">$18.50 each, no minimum. Gluten-free or vegan boxes on request, with fresh fruit and chia-seed pudding; Mariposa gluten-free bread +$2.50.</p>
+  <div class="grid four" style="margin-bottom:1.2rem">
+    <img src="img/box-lunch-aram.jpg" alt="Aram wrap box lunch" loading="lazy" width="353" height="265" style="border-radius:12px">
+    <img src="img/box-lunch-salmon.jpg" alt="Salmon Caesar box lunch" loading="lazy" width="353" height="265" style="border-radius:12px">
+    <img src="img/box-lunch-veggie.jpg" alt="Vegetarian sandwich box lunch" loading="lazy" width="353" height="265" style="border-radius:12px">
+    <img src="img/cashew-chicken-salad.jpg" alt="Cashew chicken salad" loading="lazy" width="768" height="576" style="border-radius:12px">
+  </div>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Sandwich Box</span><span class="price">$18.50</span><span class="desc">On our herb or whole wheat bread with potato or pasta salad and a lemon bar, brownie or chocolate chip banana bread (chef's choice). <em>Choose:</em> turkey · turkey &amp; cranberry · ham · BLTA · tri-tip &amp; caramelized onions · cashew chicken salad · tuna salad · egg salad · vegetarian (herbed cream cheese, avocado, carrots, beets, cucumber, tomato &amp; sprouts) · roasted veggie with tomato basil pesto · vegan (hummus, avocado, carrots, beets, cucumber, tomato &amp; sprouts).</span></div>
+    <div class="item"><span class="name">Salad Box</span><span class="price">$18.50</span><span class="desc">With a fresh roll, butter and a lemon bar, brownie or chocolate chip banana bread (chef's choice). <em>Choose:</em> Cobb · Thai chicken · cashew chicken salad · chicken or flaked salmon Caesar's Goddess · Greek · chicken &amp; roasted vegetable · edamame &amp; avocado quinoa.</span></div>
+    <div class="item"><span class="name">Cindy's Special Box</span><span class="price">$18.50</span><span class="desc">Grilled Mary's chicken breast, roasted vegetables, sweet potato, house salsa, fresh baked roll, brownie or lemon bar.</span></div>
+    <div class="item"><span class="name">Tahini Lentil Bowl <span class="tagpill">V</span></span><span class="price">$18.50</span><span class="desc">Roasted cauliflower &amp; broccolini, charred red onions, lentils, baby chard &amp; kale, toasted seeds, herbed lemon tahini dressing, fresh baked roll, brownie or lemon bar.</span></div>
+    <div class="item"><span class="name">Paleo Box <span class="tagpill">GF</span></span><span class="price">$18.50</span><span class="desc">Grilled Mary's chicken breast, roasted vegetables, roasted sweet potatoes, fresh fruit and nuts.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="buffets">
+  <h2>Lunch Buffets</h2>
+  <p class="intro">15-person minimum unless noted. Paper and plastic goods included; packaged individually for $3 pp. Add rolls $8.50 per dozen.</p>
+  <div class="menu-photo"><img src="img/marys-chicken-platter.jpg" alt="Grilled Mary's chicken platter" loading="lazy" width="1200" height="900"><img src="img/kale-broccolini.jpg" alt="Kale and broccolini" loading="lazy" width="1200" height="900"></div>
+  <div class="menu-grid">
+    <div class="item"><span class="name">The Upscale</span><span class="price">$28 pp</span><span class="desc">Served cold. Sliced tri-tip with Dijon mayo or chimichurri; grilled Mary's chicken breast with Roma tomato basil salsa or harissa (sub grilled salmon with citrus relish +$3 pp); Caesar's Goddess or Bountiful Green salad; roasted vegetables or kale &amp; broccolini; pesto pasta or Israeli salad; fresh baked rolls and butter.</span></div>
+    <div class="item"><span class="name">The Informal</span><span class="price">$25 pp</span><span class="desc"><em>25-person minimum.</em> Fresh cubed fruit; vegetable tray with ranch; teriyaki meatballs or cubed cheese; deviled eggs, veggie frittata or mozzarella tomato basil crostini; aram wraps (pesto/veggie, turkey/cranberry); mini croissants (cashew chicken salad, tuna salad or brie with fig jam &amp; arugula); quarter-cut sandwich platter (turkey, tri-tip, ham, cashew chicken salad or tuna).</span></div>
+    <div class="item"><span class="name">Light Refreshment</span><span class="price">$16.50 pp</span><span class="desc"><em>25-person minimum.</em> Choose any four items from the Informal menu.</span></div>
+    <div class="item"><span class="name">Hot Lunch</span><span class="price">$26 pp</span><span class="desc">Roasted lemon &amp; rosemary Mary's chicken; Caesar's Goddess or Bountiful Green salad; roasted veggies or kale &amp; broccolini; roasted sweet potatoes or mashed potatoes.</span></div>
+    <div class="item"><span class="name">BBQ</span><span class="price">$38 pp</span><span class="desc">Whole chicken pieces, smoked brisket and pulled pork with cornbread and BBQ sauce. Choice of three sides: baked beans, veggie chili, roasted sweet potato, roasted vegetables, Bountiful Green salad, Caesar's Goddess salad, potato salad, coleslaw, mashed potatoes, fruit. <em>Add a rack of ribs (13 ribs) $35</em></span></div>
+    <div class="item"><span class="name">Sandwich &amp; Salad Bar</span><span class="price">$26 pp</span><span class="desc">Two quarter-cut sandwiches and one aram wrap per person, with three of: Bountiful Green salad, Caesar's Goddess salad, avocado quinoa, potato salad, pesto pasta salad, fresh fruit, roasted vegetables.</span></div>
+    <div class="item"><span class="name">Cindy's Special</span><span class="price">$27 pp</span><span class="desc">Grilled Mary's chicken breast with Roma tomato basil salsa, Bountiful Green salad, roasted vegetables, edamame &amp; avocado quinoa and fruit.</span></div>
+    <div class="item"><span class="name">Taco Bar</span><span class="price">$25 pp</span><span class="desc">Chicken, steak, Spanish rice, black beans, corn and flour tortillas with shredded lettuce, cabbage, tomato, onions, jalapeño, cilantro, limes, radish, sour cream, cheese, salsa, tomatillo salsa and Tapatío.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="comfort">
+  <h2>California Comfort Food</h2>
+  <p class="intro">$165 per half pan, serves 12, with Caesar's Goddess or Bountiful Green salad, rolls, butter, paper and plastic goods. $130 for the half pan only.</p>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Veggie or Meat Lasagna</span><span class="price">$165</span><span class="desc">Layers of spinach &amp; ricotta, mushrooms, pasta, house-made marinara, mozzarella and parmesan. Meat lasagna adds layers of grass-fed ground beef.</span></div>
+    <div class="item"><span class="name">Eggplant Parmesan <span class="tagpill">GF</span></span><span class="price">$165</span><span class="desc">Layers of roasted parmesan eggplant, spinach &amp; ricotta, mushrooms, house-made marinara and mozzarella.</span></div>
+    <div class="item"><span class="name">Turkey Pot Pie</span><span class="price">$165</span><span class="desc">In-house roasted turkey breast, potatoes, peas, carrots, broccoli and gravy under a whole grain pie crust.</span></div>
+    <div class="item"><span class="name">Chicken Cacciatore &amp; Polenta <span class="tagpill">GF</span></span><span class="price">$165</span><span class="desc">Mary's chicken breast, mushrooms, bell peppers, zucchini, onions and kalamata olives in tomato basil marinara over polenta.</span></div>
+    <div class="item"><span class="name">Vegetarian Chili <span class="tagpill">GF</span></span><span class="price">$165</span><span class="desc">Pinto and garbanzo beans cooked with family-recipe chili spices, bell pepper, zucchini, eggplant, onions and tomatoes, over polenta or brown rice with grated cheese and guacamole.</span></div>
+    <div class="item"><span class="name">Chicken Enchilada Casserole</span><span class="price">$165</span><span class="desc">Shredded chicken, corn tortillas, mole sauce and shredded cheese.</span></div>
+    <div class="item"><span class="name">Smoked Brisket Mac N Cheese</span><span class="price">$165</span><span class="desc">Brisket, elbow noodles and house-made cheese sauce topped with bread crumbs.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="platters">
+  <h2>Party Platters</h2>
+  <div class="menu-photo"><img src="img/tri-tip-platter.jpg" alt="Grilled tri-tip platter" loading="lazy" width="1200" height="900"><img src="img/lox-platter.jpg" alt="Lox platter" loading="lazy" width="656" height="492"></div>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Artisan Cheese Platter</span><span class="price">serves 25 $140 · serves 50 $220</span><span class="desc">Artisan cheeses, dried fruit, mixed nuts, grapes and berries with crackers and sliced baguette. <em>Add charcuterie: $190 / $350</em></span></div>
+    <div class="item"><span class="name">Cheese Platter</span><span class="price">serves 25 $75 · 50 $130 · 75 $190</span><span class="desc">Cubed jack, cheddar, Swiss, havarti dill and gouda with grapes, nuts, crackers and sliced baguette.</span></div>
+    <div class="item"><span class="name">Fresh Fruit &amp; Cheese</span><span class="price">serves 30 $130</span><span class="desc">5 lb fresh fruit and 2 lb cubed cheese with sliced baguette.</span></div>
+    <div class="item"><span class="name">Fabulous Fruit</span><span class="price">serves 20 $80 · 35 $105 · 50 $135</span><span class="desc">Fresh cubed or sliced fruit and mixed berries.</span></div>
+    <div class="item"><span class="name">Seasonal Crudité with House Ranch</span><span class="price">serves 25 $65 · 50 $100 · 75 $140</span><span class="desc">A variety of vegetables cut and displayed for dipping. <em>Add hummus $14 pint · Add baba ganoush $14 pint</em></span></div>
+    <div class="item"><span class="name">Mediterranean Mezze Platter</span><span class="price">serves 30 $130 · serves 50 $210</span><span class="desc">Feta, seasonal hummus, baba ganoush, pickled veggies, Greek olives, cucumbers, carrots and flatbread.</span></div>
+    <div class="item"><span class="name">Lox &amp; Bagel</span><span class="price">$18.50 pp · 20-person minimum</span><span class="desc">House of Bagels freshly baked bagels, Norwegian lox, whipped cream cheese, tomato, red onions, capers and New York-style dill pickles.</span></div>
+    <div class="item"><span class="name">Decorated Poached Salmon <span class="tagpill">GF</span></span><span class="price">serves 30 $250</span><span class="desc">Poached salmon smothered with dill sauce and decorated with layers of thinly sliced cucumber.</span></div>
+    <div class="item"><span class="name">Grilled Mary's Chicken Breast <span class="tagpill">GF</span></span><span class="price">serves 12 $120 · 20 $180 · 28 $220</span><span class="desc">Grilled chicken, sliced, with tomato basil salsa.</span></div>
+    <div class="item"><span class="name">Grilled Tri-Tip of Beef <span class="tagpill">GF</span></span><span class="price">serves 12 $140 · 20 $210 · 28 $250</span><span class="desc">Sliced grilled tri-tip with chimichurri, horseradish cream or Dijonnaise.</span></div>
+    <div class="item"><span class="name">Grilled Salmon <span class="tagpill">GF</span></span><span class="price">serves 12 $140 · 20 $210 · 28 $250</span><span class="desc">Grilled salmon with Caesar's Goddess, citrus relish or yogurt dill sauce.</span></div>
+    <div class="item"><span class="name">Aram Sandwiches</span><span class="price">24 pc $80 · 32 pc $95 · 40 pc $130</span><span class="desc">Pesto/veggie, turkey/cranberry, ham, tri-tip.</span></div>
+    <div class="item"><span class="name">Quarter-Cut Sandwiches</span><span class="price">24 pc $80 · 36 pc $115</span><span class="desc">BLTA, Joe's Delight, turkey, tri-tip &amp; caramelized onions, ham, cashew chicken salad, tuna salad, egg salad, roasted veggie or Nature's Way.</span></div>
+    <div class="item"><span class="name">Mini Croissants</span><span class="price">25 pc $90 · 36 pc $120 · 48 pc $160</span><span class="desc">A Sunrise favorite. House-made mini croissants stuffed with cashew chicken salad, tuna salad or brie, fig jam and arugula.</span></div>
+    <div class="item"><span class="name">Mini Bagels</span><span class="price">25 pc $100 · 36 pc $140 · 50 pc $190</span><span class="desc">Smeared with cream cheese and topped with sliced Norwegian lox and a tomato, red onion and caper relish.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="salad-bowls">
+  <h2>Salad Bowls</h2>
+  <p class="intro">Entrée salads: small serves 10, large serves 20. Side salads: small serves 20, large serves 40.</p>
+  <div class="menu-photo"><img src="img/caesars-goddess-salad.jpg" alt="Caesar's Goddess salad" loading="lazy" width="1200" height="900"><img src="img/spinach-salad.jpg" alt="Spinach salad with egg and bacon" loading="lazy" width="353" height="265"></div>
+  <h3>Entrée salads</h3>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Caesar's Goddess <span class="tagpill">GF</span></span><span class="price">S $65 · L $100</span><span class="desc">Creamy citrus herb dressing tossed with romaine, Romano and house-made croutons. <em>With chicken: S $80 · L $140</em></span></div>
+    <div class="item"><span class="name">Thai Chicken</span><span class="price">S $90 · L $150</span><span class="desc">Grilled chicken breast, crunchy veggies, whole grain noodles, Thai dressing, sesame seeds, cilantro and mixed greens. <em>Thai Veggie Salad (V): S $60 · L $95</em></span></div>
+    <div class="item"><span class="name">Bountiful Green Salad <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $55 · L $90</span><span class="desc">Mixed greens, romaine, grated carrots, beets, red cabbage, tomato, cucumber and toasted seeds with your choice of dressing.</span></div>
+    <div class="item"><span class="name">Spinach Salad <span class="tagpill">GF</span></span><span class="price">S $65 · L $100</span><span class="desc">Organic baby spinach, grated egg, bacon, mushroom, red onion and tomato with herb dressing.</span></div>
+    <div class="item"><span class="name">Coastal Kale Salad <span class="tagpill">GF</span></span><span class="price">S $55 · L $90</span><span class="desc">Lacinato kale, sunflower sprouts, red onion, toasted sunflower, pumpkin and sesame seeds with Bragg's lemon dressing.</span></div>
+    <div class="item"><span class="name">Seasonal Arugula Salad</span><span class="price">S $65 · L $100</span><span class="desc">Organic arugula, seasonal fruit, Sky Hill Farms goat cheese, fennel, pecans and citrus vinaigrette.</span></div>
+  </div>
+  <h3 style="margin-top:1.4rem">Side salad bowls</h3>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Fruit Salad <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $90 · L $130</span><span class="desc">Chopped melons, pineapple and grapes topped with berries.</span></div>
+    <div class="item"><span class="name">Roasted Veggies <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $90 · L $130</span><span class="desc">Seasonal vegetables including zucchini, peppers, onions, carrots, mushrooms and cauliflower.</span></div>
+    <div class="item"><span class="name">Kale &amp; Broccolini <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $80 · L $130</span><span class="desc">Tossed with our toasted garlic and lemon dressing.</span></div>
+    <div class="item"><span class="name">Edamame &amp; Avocado Quinoa <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $85 · L $140</span><span class="desc">Edamame, tomato, red onion, avocado, arugula, lemon and olive oil.</span></div>
+    <div class="item"><span class="name">Hearty Tahini Bowl <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $75 · L $120</span><span class="desc">Roasted cauliflower &amp; broccolini, charred red onions, lentils, baby chard &amp; kale, toasted seeds and herbed lemon tahini dressing.</span></div>
+    <div class="item"><span class="name">Israeli Salad <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">S $60 · L $95</span><span class="desc">Cucumber, tomato, red onion, oregano, lemon juice and olive oil.</span></div>
+    <div class="item"><span class="name">Coleslaw, Potato Salad or Pesto Pasta Salad</span><span class="price">S $75 · L $110</span><span class="desc">Family recipes. Coleslaw and potato salad are gluten-free.</span></div>
+    <div class="item"><span class="name">Salad Sampler</span><span class="price">S $95 · M $115 · L $145</span><span class="desc">Any three side salads from the list above.</span></div>
+    <div class="item"><span class="name">Cashew Chicken Salad <span class="tagpill">GF</span></span><span class="price">S $140 · L $250</span><span class="desc">Mixed with Fuji apples, celery, cashews and mayo.</span></div>
+    <div class="item"><span class="name">Tuna Salad <span class="tagpill">GF</span></span><span class="price">S $75 · L $120</span><span class="desc">Mixed with celery and light mayo.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="hors-doeuvres">
+  <h2>Hors d'oeuvres</h2>
+  <p class="intro">25-piece minimum unless noted.</p>
+  <div class="menu-photo"><img src="img/deviled-eggs.jpg" alt="Deviled eggs" loading="lazy" width="670" height="503"><img src="img/mozzarella-crostini.jpg" alt="Mozzarella tomato basil crostini" loading="lazy" width="353" height="265"></div>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Char-Broiled Lemon &amp; Rosemary Mary's Chicken Skewers <span class="tagpill">GF</span></span><span class="price">$5 each</span><span class="desc">4" skewer of grilled chicken breast with Caesar's Goddess or harissa dipping sauce.</span></div>
+    <div class="item"><span class="name">Artichoke Dip</span><span class="price">serves 40 $100</span><span class="desc">A house-made Sunrise favorite with artichoke hearts, green onions and a variety of cheeses, with baguettes.</span></div>
+    <div class="item"><span class="name">Teriyaki Meatballs</span><span class="price">serves 40 $110</span><span class="desc">Pork and beef meatballs tossed in Thai dressing and topped with sesame seeds.</span></div>
+    <div class="item"><span class="name">Thick-Cut Bacon-Wrapped Stuffed Dates <span class="tagpill">GF</span></span><span class="price">$3.75 each</span><span class="desc">Stuffed with almond.</span></div>
+    <div class="item"><span class="name">Stuffed Mushrooms <span class="tagpill">GF</span></span><span class="price">$3.75 each</span><span class="desc">Florentine; Italian sausage on request.</span></div>
+    <div class="item"><span class="name">Deviled Eggs <span class="tagpill">GF</span></span><span class="price">25 pc $75 · 36 pc $95 · 50 pc $135</span></div>
+    <div class="item"><span class="name">Farmers' Market Spring Rolls <span class="tagpill">GF</span> <span class="tagpill">V</span></span><span class="price">$4.50 each</span><span class="desc">Bite-size grated carrots, beets, cabbage, avocado and fresh herbs in a rice wrapper with ginger chili sauce.</span></div>
+    <div class="item"><span class="name">Antipasto Skewers <span class="tagpill">GF</span></span><span class="price">$4.50 each</span><span class="desc">Cured meats, Italian cheese, olive and cornichon. <em>Veggie skewer (cherry tomato, fresh mozzarella and basil) $4 each</em></span></div>
+    <div class="item"><span class="name">Asparagus Wrapped with Crispy Prosciutto <span class="tagpill">GF</span></span><span class="price">$3.50 each</span><span class="desc">Drizzled with balsamic glaze.</span></div>
+    <div class="item"><span class="name">Vegetable Frittata <span class="tagpill">GF</span></span><span class="price">50 pc $110 · 100 pc $190</span><span class="desc">Zucchini, bell pepper, mushrooms, onions, eggs and cheese, baked and sliced in squares.</span></div>
+    <div class="item"><span class="name">Prawns</span><span class="price">24 $90</span><span class="desc">Traditional with cocktail sauce, or tequila lime.</span></div>
+    <div class="item"><span class="name">Grilled Tri-Tip Crostini</span><span class="price">25 pc $95 · 36 pc $140 · 50 pc $195</span><span class="desc">Sliced tri-tip topped with horseradish cream, pickled red onion and arugula.</span></div>
+    <div class="item"><span class="name">Mozzarella Tomato &amp; Basil Crostini</span><span class="price">25 pc $85 · 36 pc $110 · 50 pc $145</span><span class="desc">Crostini topped with slow-roasted tomato spread, tomato, fresh mozzarella and basil.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="bakery">
+  <h2>Bakery &amp; Desserts</h2>
+  <p class="intro">Baked fresh in our bakery. Please tell us about any allergies.</p>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Breads &amp; Rolls</span><span class="price"></span><span class="desc">Herb, egg or wheat rolls $8.50 per dozen · Marble rye loaf $10.95 · Challah 1 lb $11, 2 lb $16.50 · Corn bread · Muffins $3.75 each (12 minimum) · Muffin pans: small (12) $40, medium (20) $65, large (30) $95.</span></div>
+    <div class="item"><span class="name">Assorted Mini Desserts</span><span class="price">$1.75 each</span><span class="desc">Lemon bars, brownies, chocolate chip banana bread and assorted cookies. We suggest one to two per person.</span></div>
+    <div class="item"><span class="name">Cupcakes &amp; Cakes</span><span class="price">mini cupcake $3.25 · cupcake $4.50</span><span class="desc">Lemon, chocolate, coconut cream, red velvet, carrot (contains nuts). Cakes: 8" round (12) $45 · quarter sheet (25) $65 · half sheet (50) $110 · full sheet (100) $190.</span></div>
+    <div class="item"><span class="name">Pies &amp; Crumbles</span><span class="price">9" round $45</span><span class="desc">Apple, peach, four berry and seasonal. Crumbles: small (15) $65 · medium (20) $80 · large (30) $100. Apple strudel $50.</span></div>
+    <div class="item"><span class="name">Bread Pudding</span><span class="price">12 pc $55 · 20 pc $80 · 30 pc $120</span><span class="desc">Our day-old cinnamon pastries baked with custard to perfection.</span></div>
+    <div class="item"><span class="name">Snack Cakes</span><span class="price">20 pc $55 · 40 pc $105 · 80 pc $200</span><span class="desc">Choice of zucchini, carrot &amp; walnut, chocolate chip banana bread or coffee cake.</span></div>
+    <div class="item"><span class="name">Cheese Blintz</span><span class="price">$60 per dozen</span><span class="desc">Fresh crepe filled with our family-recipe Danish cheese, with strawberry jam and sour cream.</span></div>
+    <div class="item"><span class="name">Sunrise Granola</span><span class="price">$13/lb</span><span class="desc">Oats, oat bran, coconut, almonds, walnuts and cinnamon, lightly sweetened with honey.</span></div>
+  </div>
+</section>
+
+<section class="menu-section" id="beverages">
+  <h2>Beverages</h2>
+  <div class="menu-grid">
+    <div class="item"><span class="name">Coffee Service</span><span class="price">inquire</span><span class="desc">Available for any breakfast or lunch order.</span></div>
+    <div class="item"><span class="name">Assorted Cold Beverages</span><span class="price">inquire</span><span class="desc">Sparkling waters, bottled waters and assorted sodas.</span></div>
+  </div>
+  <div class="btn-row" style="margin-top:2rem"><a class="btn btn-sun" href="catering.html#quote">Request a quote</a><a class="btn btn-ghost" href="catering.html">How catering works</a></div>
+</section>
+
+</div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div>
+    <div class="brand-foot"><img src="img/logo-gold.png" alt="" width="60" height="60"><span><b>Sunrise</b><small>Bistro &amp; Catering</small></span></div>
+    <p>Family-owned and operated in downtown Walnut Creek since 1981. Scratch cooking, house-baked breads and pastries, and catering delivered across the East Bay.</p>
+    <p><a href="https://www.instagram.com/sunrisebistro/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@sunrisebistro/" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.yelp.com/biz/sunrise-bistro-walnut-creek-5" target="_blank" rel="noopener">Yelp (Bistro)</a> · <a href="https://www.yelp.com/biz/sunrise-catering-walnut-creek-2" target="_blank" rel="noopener">Yelp (Catering)</a></p>
+  </div>
+  <div>
+    <h4>The Bistro</h4>
+    <p>1559 Botelho Drive<br>Walnut Creek, CA 94596<br>Across from The Container Store</p>
+    <p>Open daily 7 AM–3 PM<br>Online ordering 7:15 AM–2:30 PM</p>
+    <p>(925) 930-0122</p>
+  </div>
+  <div>
+    <h4>Catering Office</h4>
+    <p>Mon–Fri 9 AM–5 PM<br>(925) 930-6323<br>cateringorders@sunrisebistrocatering.com</p>
+    <p>Delivery daily 7 AM–4 PM<br>Pickup daily 7 AM–3 PM<br>Orders by noon the business day before</p>
+  </div>
+  <div>
+    <h4>Quick links</h4>
+    <ul>
+      <li><a href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order online</a></li>
+      <li><a href="menu.html">Bistro menu</a></li>
+      <li><a href="catering.html#quote">Request a catering quote</a></li>
+      <li><a href="catering-menus.html">Catering menus</a></li>
+      <li><a href="https://order.toasttab.com/egiftcards/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">E-gift cards</a></li>
+      <li><a href="hours.html">Hours, directions &amp; parking</a></li>
+      <li><a href="privacy.html">Privacy policy</a></li>
+    </ul>
+  </div>
+  <div class="legal"><span>© <span data-year>2026</span> Sunrise Bistro &amp; Catering · Joroda, Inc.</span><span>Kosher-style dishes are prepared in our kitchen, which is not a kosher kitchen. Closed July 4, Thanksgiving, Christmas and New Year's Day.</span></div>
+</div></footer>
+<div class="mobile-bar"><a class="btn btn-sun" href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order Online</a><a class="btn btn-outline" href="menu.html">Menu</a><a class="btn btn-ghost" href="catering.html#quote">Catering</a></div>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var toggle=document.querySelector('.nav-toggle');
+  var nav=document.querySelector('.nav');
+  if(toggle&&nav){
+    toggle.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+    });
+    document.addEventListener('click',function(e){
+      if(nav.classList.contains('open')&&!nav.contains(e.target)&&!toggle.contains(e.target)){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}
+    });
+  }
+  var toastEl=document.querySelector('.toast');
+  function toast(msg){
+    if(!toastEl)return; toastEl.textContent=msg; toastEl.classList.add('show');
+    clearTimeout(toastEl._t); toastEl._t=setTimeout(function(){toastEl.classList.remove('show');},2200);
+  }
+  function copyText(text,btn){
+    function fallback(){
+      var ta=document.createElement('textarea'); ta.value=text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      var ok=false; try{ok=document.execCommand('copy');}catch(e){}
+      document.body.removeChild(ta);
+      toast(ok?'Copied':'Select the text and copy it');
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){toast('Copied');},fallback);
+    }else{fallback();}
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){copyText(btn.getAttribute('data-copy'),btn);});
+  });
+  var form=document.getElementById('quote-form');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var err=document.getElementById('quote-error');
+      var required=['q-name','q-phone','q-email','q-date','q-guests','q-service'];
+      var missing=required.filter(function(id){var el=document.getElementById(id);return !el||!el.value.trim();});
+      if(missing.length){
+        err.textContent='Please fill in your name, phone, email, event date, guest count and pickup or delivery.';
+        document.getElementById(missing[0]).focus(); return;
+      }
+      err.textContent='';
+      var v=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
+      var menus=Array.prototype.slice.call(form.querySelectorAll('input[name="menus"]:checked')).map(function(c){return c.value;}).join(', ')||'Not sure yet';
+      var lines=[
+        'Catering quote request — '+v('q-name')+(v('q-company')?' ('+v('q-company')+')':''),
+        'Phone: '+v('q-phone'),
+        'Email: '+v('q-email'),
+        'Event date: '+v('q-date')+(v('q-time')?' at '+v('q-time'):''),
+        'Guests: '+v('q-guests'),
+        'Service: '+v('q-service')+(v('q-address')?' — '+v('q-address'):''),
+        'Menus of interest: '+menus,
+        'Notes: '+(v('q-notes')||'—')
+      ];
+      var text=lines.join('\n');
+      var box=document.getElementById('quote-confirm');
+      document.getElementById('quote-text').value=text;
+      document.getElementById('quote-summary').textContent='Thanks, '+v('q-name').split(' ')[0]+'. On the live site this request goes straight to the catering office, which replies during office hours (Mon–Fri 9 AM–5 PM). For this draft, copy the request below and email it to cateringorders@sunrisebistrocatering.com.';
+      box.hidden=false; form.hidden=true;
+      box.scrollIntoView({behavior:'smooth',block:'start'});
+      var cb=document.getElementById('quote-copy');
+      if(cb){cb.onclick=function(){copyText(text,cb);};}
+      var again=document.getElementById('quote-again');
+      if(again){again.onclick=function(){box.hidden=true;form.hidden=false;form.reset();};}
+    });
+  }
+  var y=document.querySelector('[data-year]'); if(y){y.textContent=new Date().getFullYear();}
+  var path=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav a[href]').forEach(function(a){
+    var href=a.getAttribute('href');
+    if(href===path||(path==='index.html'&&href==='index.html')){a.setAttribute('aria-current','page');}
+  });
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunrise Bistro & Catering</title>
+<meta name="description" content="Family-owned since 1981 in downtown Walnut Creek. Scratch-made breakfast and lunch daily 7 AM–3 PM at 1559 Botelho Dr, plus breakfast, box-lunch and buffet catering delivered across the East Bay. Order online or call (925) 930-0122.">
+<meta property="og:title" content="Sunrise Bistro & Catering — Breakfast, Brunch & Catering in Walnut Creek, CA">
+<meta property="og:description" content="Family-owned since 1981 in downtown Walnut Creek. Scratch-made breakfast and lunch daily 7 AM–3 PM at 1559 Botelho Dr, plus breakfast, box-lunch and buffet catering delivered across the East Bay. Order online or call (925) 930-0122.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/hero-breakfast-burrito.jpg">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Montserrat:wght@500;600;700&display=swap">
+<style>
+/* Layout concept: a morning table — cream paper, brick-red serif headings, a sunrise-gold call to action, menus set like a printed card with price leaders. */
+:root{
+  --cream:#FBF7F0; --sand:#F1E8D8; --paper:#FFFFFF; --ink:#2B2623; --muted:#6E635A;
+  --brick:#A5331C; --brick-dark:#84271A; --gold:#B8892E; --gold-dark:#8C6A24;
+  --sun:#F5A742; --sun-dark:#E08E1F; --line:#E4D9C6; --shadow:0 10px 30px rgba(74,48,24,.12);
+  --display:"Fraunces","Georgia","Times New Roman",serif; --body:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --maxw:1160px; --radius:14px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;font-weight:500}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brick);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--brick-dark)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.15;margin:0 0 .4em;color:var(--brick);text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,4.6vw,3.4rem);font-variation-settings:"opsz" 72,"SOFT" 40}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem)}
+h3{font-size:1.25rem}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--body);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark);margin:0 0 .8em}
+.lede{font-size:1.1rem;color:var(--muted);max-width:60ch}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:20px}
+.section{padding-block:clamp(2.6rem,6vw,4.5rem)}
+.section.sand{background:var(--sand)}
+.section.paper{background:var(--paper)}
+.section-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem 2rem;margin-bottom:1.8rem}
+.section-head p{margin:0}
+.grid{display:grid;gap:1.4rem}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid.three{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid.four{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.grid>*{min-width:0}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.35rem;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;border:2px solid transparent;cursor:pointer;line-height:1.2;transition:background .15s,color .15s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn-sun{background:var(--sun);color:#3A2408;border-color:var(--sun)}
+.btn-sun:hover{background:var(--sun-dark);border-color:var(--sun-dark);color:#2B1A05}
+.btn-brick{background:var(--brick);color:#fff;border-color:var(--brick)}
+.btn-brick:hover{background:var(--brick-dark);border-color:var(--brick-dark);color:#fff}
+.btn-outline{background:transparent;color:var(--brick);border-color:var(--brick)}
+.btn-outline:hover{background:var(--brick);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn.small{padding:.55rem .95rem;font-size:.85rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+/* Top bar + header */
+.topbar{background:var(--brick);color:#FBE9DF;font-size:.8rem;font-weight:600;letter-spacing:.02em}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;justify-content:center;padding-block:.45rem;text-align:center}
+.topbar span{white-space:nowrap}
+@media (max-width:600px){.topbar span:nth-child(2),.topbar span:nth-child(4){display:none}}
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(251,247,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:1rem;padding-block:.6rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
+.brand img{width:52px;height:52px;flex:0 0 auto}
+.brand b{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.1;color:var(--brick);display:block;letter-spacing:-.01em}
+.brand small{display:block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);font-weight:700}
+.nav{display:flex;align-items:center;gap:.2rem}
+.nav a{padding:.55rem .75rem;border-radius:8px;text-decoration:none;color:var(--ink);font-weight:600;font-size:.93rem;white-space:nowrap}
+.nav a:hover,.nav a[aria-current=page]{background:var(--sand);color:var(--brick)}
+.nav .btn{margin-left:.5rem}
+.nav-toggle{display:none;background:none;border:2px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--ink);align-items:center;justify-content:center}
+.nav-toggle svg{width:22px;height:22px}
+@media (max-width:900px){
+  .nav-toggle{display:inline-flex}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:.6rem 20px 1rem;gap:.15rem;box-shadow:var(--shadow)}
+  .nav.open{display:flex}
+  .nav a{padding:.8rem .6rem;font-size:1rem}
+  .nav .btn{margin:.5rem 0 0;justify-content:center}
+}
+/* Hero */
+.hero{padding-block:clamp(2rem,5vw,4rem)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+.hero-copy h1{margin-bottom:.5em}
+.hero-copy .lede{margin-bottom:1.5rem}
+.hero-media{position:relative;min-width:0}
+.hero-media img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:16/10;object-fit:cover;width:100%}
+.hero-chip{position:absolute;left:16px;bottom:16px;background:rgba(251,247,240,.96);border-radius:999px;padding:.45rem .9rem;font-size:.82rem;font-weight:700;color:var(--brick);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.4rem;padding:0;list-style:none;color:var(--muted);font-size:.9rem;font-weight:600}
+.facts li{display:flex;align-items:center;gap:.45rem}
+.facts svg{width:18px;height:18px;color:var(--gold);flex:0 0 auto}
+@media (max-width:800px){.hero .wrap{grid-template-columns:1fr}.hero-media{order:-1}}
+/* Info strip */
+.strip{background:var(--paper);border-block:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1rem 2rem;padding-block:1.2rem}
+.strip-item{display:flex;gap:.8rem;align-items:flex-start;min-width:0}
+.strip-item svg{width:26px;height:26px;color:var(--brick);flex:0 0 auto;margin-top:.15rem}
+.strip-item b{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark)}
+.strip-item span{font-size:.95rem}
+.strip-item a{font-weight:600}
+/* Cards */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .card-body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card h3{margin:0;font-size:1.15rem}
+.card .price{font-family:var(--body);font-weight:700;color:var(--gold-dark);font-variant-numeric:tabular-nums}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+.card .tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brick)}
+.card-row{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+a.card{text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+/* Story */
+.story .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.story img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:1;object-fit:cover}
+.story ul{padding-left:1.1rem;margin:0 0 1.2rem;color:var(--muted)}
+.story li{margin-bottom:.35rem}
+@media (max-width:800px){.story .wrap{grid-template-columns:1fr}}
+/* Mosaic */
+.mosaic{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:.7rem;min-width:0}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.mosaic img:first-child{grid-row:1/3;aspect-ratio:4/3}
+.mosaic img:not(:first-child){aspect-ratio:4/3}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+@media (max-width:800px){.split{grid-template-columns:1fr}}
+/* Steps / facts list */
+.steps{list-style:none;padding:0;margin:0 0 1.4rem;display:grid;gap:.8rem}
+.steps li{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start}
+.steps .n{width:34px;height:34px;border-radius:50%;background:var(--sand);color:var(--brick);font-weight:700;display:grid;place-items:center;font-family:var(--display);font-size:1.05rem}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:.93rem}
+/* Awards */
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:1rem}
+.award{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.award b{display:block;font-family:var(--display);font-size:1.3rem;color:var(--brick);font-weight:600;line-height:1.1}
+.award span{font-size:.86rem;color:var(--muted)}
+.award small{display:block;margin-top:.4rem;font-size:.78rem}
+/* Gift band */
+.band{background:var(--brick);color:#FBE9DF;border-radius:var(--radius);padding:clamp(1.4rem,3vw,2.4rem);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 2rem}
+.band h2{color:#fff;margin:0 0 .2em}
+.band p{margin:0;color:#F6D9CC;max-width:52ch}
+/* Location band */
+.geo{position:relative;background:#3b2a1e url(img/walnut-creek.jpg) center/cover no-repeat;color:#fff;isolation:isolate}
+.geo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,28,16,.86),rgba(43,28,16,.55));z-index:-1}
+.geo .wrap{padding-block:clamp(2.5rem,6vw,4rem)}
+.geo h2{color:#fff}
+.geo p{color:#F3E6D8;max-width:58ch}
+.geo .btn-ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.geo .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+/* Footer */
+.site-footer{background:#2B1C12;color:#E9DCCB;padding-block:3rem 5.5rem;font-size:.92rem}
+.site-footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2rem}
+.site-footer h4{color:#F5C9B5;font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.8rem}
+.site-footer a{color:#F7E7D6}
+.site-footer p{margin:0 0 .5em}
+.site-footer ul{list-style:none;padding:0;margin:0}
+.site-footer li{margin-bottom:.4rem}
+.site-footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.14);padding-top:1.2rem;color:#BFAE9A;font-size:.8rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+.site-footer .brand-foot{display:flex;gap:.8rem;align-items:center;margin-bottom:.8rem}
+.site-footer .brand-foot img{width:60px;height:60px}
+.site-footer .brand-foot b{font-family:var(--display);font-size:1.3rem;color:#fff;font-weight:600;display:block;line-height:1.1}
+.site-footer .brand-foot small{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#E6B98A;font-weight:700}
+@media (max-width:900px){.site-footer .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.site-footer .wrap{grid-template-columns:1fr}}
+/* Sticky mobile bar */
+.mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--paper);border-top:1px solid var(--line);padding:.55rem 12px calc(.55rem + env(safe-area-inset-bottom,0px));gap:.5rem}
+.mobile-bar .btn{flex:1;padding:.7rem .5rem;font-size:.85rem}
+@media (max-width:760px){.mobile-bar{display:flex}}
+/* Menu pages */
+.menu-nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 68px);z-index:40;background:var(--cream);border-bottom:1px solid var(--line)}
+.menu-nav .wrap{display:flex;gap:.4rem;overflow-x:auto;padding-block:.55rem;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.menu-nav a{flex:0 0 auto;padding:.45rem .85rem;border-radius:999px;border:1px solid var(--line);background:var(--paper);text-decoration:none;color:var(--ink);font-weight:600;font-size:.83rem;white-space:nowrap}
+.menu-nav a:hover{border-color:var(--brick);color:var(--brick)}
+.menu-section{padding-block:2.2rem;scroll-margin-top:130px}
+.menu-section+.menu-section{border-top:1px solid var(--line)}
+.menu-section .intro{color:var(--muted);font-size:.95rem;max-width:60ch;margin-bottom:1.2rem}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:.4rem 2.5rem}
+.item{display:grid;grid-template-columns:1fr auto;gap:.1rem .8rem;padding:.65rem 0;border-bottom:1px dotted var(--line);align-content:start}
+.item .name{font-weight:700;font-size:1rem}
+.item .price{font-weight:700;color:var(--gold-dark);font-variant-numeric:tabular-nums;text-align:right;max-width:58%}
+.item .desc{grid-column:1/-1;color:var(--muted);font-size:.9rem;line-height:1.5}
+.item .desc em{color:var(--brick);font-style:normal;font-weight:600}
+.tagpill{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.08em;padding:.1rem .4rem;border:1px solid var(--gold);color:var(--gold-dark);border-radius:6px;vertical-align:middle;margin-left:.3rem}
+.legend{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;font-size:.85rem;color:var(--muted);margin:1rem 0 0}
+.menu-photo{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1rem 0 1.4rem}
+.menu-photo img{border-radius:12px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.menu-hero{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end}
+@media (max-width:700px){.menu-hero{grid-template-columns:1fr}}
+.note{background:var(--sand);border-left:4px solid var(--gold);padding:.9rem 1.1rem;border-radius:8px;font-size:.92rem;color:var(--ink)}
+.note b{color:var(--brick)}
+/* Forms */
+.form{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.2rem,3vw,2rem);box-shadow:var(--shadow)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1.1rem}
+.form-grid .full{grid-column:1/-1}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}}
+label{display:block;font-size:.82rem;font-weight:700;margin-bottom:.3rem;color:var(--ink)}
+label span{color:var(--muted);font-weight:500}
+input,select,textarea{width:100%;font:inherit;font-size:.95rem;padding:.7rem .8rem;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none;box-shadow:0 0 0 3px rgba(245,167,66,.3)}
+textarea{min-height:110px;resize:vertical}
+.check{display:flex;gap:.6rem;align-items:flex-start;font-size:.85rem;font-weight:500;color:var(--muted)}
+.check input{width:auto;margin-top:.2rem}
+.form-note{font-size:.82rem;color:var(--muted);margin:.6rem 0 0}
+.error{color:var(--brick);font-size:.85rem;font-weight:600;margin-top:.5rem}
+.confirm{background:var(--sand);border-radius:12px;padding:1.2rem;margin-top:1rem}
+.confirm textarea{min-height:190px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.82rem;margin-block:.6rem}
+/* Contact block */
+.contact-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem 1.4rem}
+.contact-card h3{margin-bottom:.6rem}
+.copyline{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;margin:.3rem 0}
+.copyline code{font-family:var(--body);font-size:1.05rem;font-weight:700;color:var(--ink);background:none;user-select:all;overflow-wrap:anywhere;min-width:0}
+.copyline .btn{padding:.35rem .7rem;font-size:.75rem}
+.hours-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours-table th,.hours-table td{text-align:left;padding:.55rem .4rem;border-bottom:1px solid var(--line);font-size:.95rem}
+.hours-table th{font-weight:700;color:var(--ink)}
+.hours-table td:last-child{text-align:right;white-space:nowrap}
+.faq details{border-bottom:1px solid var(--line);padding:.6rem 0}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--display);font-size:1.4rem;color:var(--gold);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--muted);margin:.5rem 0 .3rem;font-size:.93rem}
+.page-head{padding-block:clamp(2rem,5vw,3.5rem) 1.5rem}
+.page-head .lede{margin-top:.4rem}
+.breadcrumb{font-size:.82rem;color:var(--muted);margin-bottom:.8rem}
+.breadcrumb a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:.6rem 1rem;border-radius:999px;font-size:.85rem;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:70}
+.toast.show{opacity:1}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.draft-note{background:#FFF4DE;border:1px dashed var(--sun-dark);color:#5A3A0B;font-size:.8rem;padding:.5rem 1rem;text-align:center}
+.draft-note a{color:#5A3A0B}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": ["Restaurant", "Caterer"], "@id": "https://www.sunrisebistrocatering.com/#business", "name": "Sunrise Bistro & Catering", "alternateName": ["Sunrise Bistro", "Sunrise Catering"], "url": "https://www.sunrisebistrocatering.com/", "image": ["https://www.sunrisebistrocatering.com/img/hero-breakfast-burrito.jpg", "https://www.sunrisebistrocatering.com/img/caesars-goddess-salad.jpg", "https://www.sunrisebistrocatering.com/img/founders.jpg"], "logo": "https://www.sunrisebistrocatering.com/img/logo-maroon.png", "telephone": "+1-925-930-0122", "email": "cateringorders@sunrisebistrocatering.com", "address": {"@type": "PostalAddress", "streetAddress": "1559 Botelho Drive", "addressLocality": "Walnut Creek", "addressRegion": "CA", "postalCode": "94596", "addressCountry": "US"}, "servesCuisine": ["Breakfast", "Brunch", "American"], "priceRange": "$$", "acceptsReservations": "False", "menu": "https://www.sunrisebistrocatering.com/menu.html", "foundingDate": "1981", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "07:00", "closes": "15:00"}], "specialOpeningHoursSpecification": [{"@type": "OpeningHoursSpecification", "validFrom": "2026-11-26", "validThrough": "2026-11-26", "opens": "00:00", "closes": "00:00"}, {"@type": "OpeningHoursSpecification", "validFrom": "2026-12-25", "validThrough": "2026-12-25", "opens": "00:00", "closes": "00:00"}, {"@type": "OpeningHoursSpecification", "validFrom": "2027-01-01", "validThrough": "2027-01-01", "opens": "00:00", "closes": "00:00"}, {"@type": "OpeningHoursSpecification", "validFrom": "2027-07-04", "validThrough": "2027-07-04", "opens": "00:00", "closes": "00:00"}], "contactPoint": [{"@type": "ContactPoint", "contactType": "Bistro and takeout", "telephone": "+1-925-930-0122", "areaServed": "US"}, {"@type": "ContactPoint", "contactType": "Catering office", "telephone": "+1-925-930-6323", "email": "cateringorders@sunrisebistrocatering.com", "hoursAvailable": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}}], "potentialAction": {"@type": "OrderAction", "target": "https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr"}, "sameAs": ["https://www.yelp.com/biz/sunrise-bistro-walnut-creek-5", "https://www.yelp.com/biz/sunrise-catering-walnut-creek-2", "https://www.instagram.com/sunrisebistro/", "https://www.tiktok.com/@sunrisebistro/"]}</script>
+</head>
+<body>
+
+<div class="draft-note">Draft redesign for review — not the live site. Prices and hours are from the menus and answers the team supplied on Sept 29, 2026.</div>
+<div class="topbar"><div class="wrap"><span>Open daily 7 AM–3 PM</span><span>1559 Botelho Drive, Walnut Creek</span><span>Bistro (925) 930-0122</span><span>Catering (925) 930-6323</span></div></div>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Sunrise Bistro &amp; Catering home"><img src="img/logo-maroon.png" alt="" width="52" height="52"><span><b>Sunrise</b><small>Bistro &amp; Catering</small></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <nav class="nav" id="site-nav" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="menu.html">Bistro Menu</a>
+    <a href="catering.html">Catering</a>
+    <a href="hours.html">Hours &amp; Location</a>
+    <a href="https://order.toasttab.com/egiftcards/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Gift Cards</a>
+    <a class="btn btn-sun" href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order Online</a>
+  </nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+  <div class="hero-copy">
+    <p class="eyebrow">Downtown Walnut Creek · Family-owned since 1981</p>
+    <h1>Scratch-made breakfast and lunch, seven days a week.</h1>
+    <p class="lede">House-baked breads and pastries, eggs any way you like them, salads and sandwiches on our own herb bread, and pastries baked before the doors open. Walk in any morning, or order ahead for pickup and delivery.</p>
+    <div class="btn-row">
+      <a class="btn btn-sun" href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order online</a>
+      <a class="btn btn-outline" href="menu.html">See the menu</a>
+      <a class="btn btn-ghost" href="catering.html">Catering</a>
+    </div>
+    <ul class="facts">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open daily 7 AM–3 PM</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.3-6-11a6 6 0 0 1 12 0c0 5.7-6 11-6 11z"/><circle cx="12" cy="10" r="2.5"/></svg>1559 Botelho Drive, across from The Container Store</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 15-14-1 9-6 14-14 14"/><path d="M5 19c3-4 6-7 10-9"/></svg>Gluten-free and vegan options on every part of the menu</li>
+    </ul>
+  </div>
+  <div class="hero-media">
+    <img src="img/hero-breakfast-burrito.jpg" alt="A Sunrise breakfast burrito cut in half, filled with eggs, bacon and breakfast potatoes, with a cup of salsa" width="1800" height="1012" fetchpriority="high">
+    <span class="hero-chip">Breakfast Burrito · $14.95</span>
+  </div>
+</div></section>
+
+<div class="strip"><div class="wrap">
+  <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Bistro hours</b><span>Daily 7 AM–3 PM · online orders 7:15 AM–2:30 PM<br>Closed July 4, Thanksgiving, Christmas, New Year's Day</span></div></div>
+  <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.3-6-11a6 6 0 0 1 12 0c0 5.7-6 11-6 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Find us</b><span>1559 Botelho Drive, Walnut Creek, CA 94596<br><a href="https://www.google.com/maps/dir/?api=1&amp;destination=1559+Botelho+Dr%2C+Walnut+Creek%2C+CA+94596" target="_blank" rel="noopener">Google Maps</a> · <a href="https://maps.apple.com/?daddr=1559+Botelho+Dr,+Walnut+Creek,+CA+94596" target="_blank" rel="noopener">Apple Maps</a></span></div></div>
+  <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><b>Bistro &amp; takeout</b><span>(925) 930-0122<br>Walk in any time. Order at the counter and we bring it to your table.</span></div></div>
+  <div class="strip-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><div><b>Catering office</b><span>(925) 930-6323 · Mon–Fri 9 AM–5 PM<br><a href="catering.html#quote">Request a quote</a></span></div></div>
+</div></div>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">What people come back for</p><h2>Breakfast is the main event. Lunch holds its own.</h2></div><a class="btn btn-outline" href="menu.html">Full menu with prices</a></div>
+  <div class="grid three">
+    <a class="card" href="menu.html#burritos"><img src="img/breakfast-burrito.jpg" alt="Breakfast burrito halves with bacon, egg and potato" loading="lazy" width="900" height="675"><div class="card-body"><span class="tag">Breakfast burritos</span><div class="card-row"><h3>Breakfast Burrito</h3><span class="price">$14.95</span></div><p>Eggs, cheese and breakfast potatoes with bacon, sausage or ham, served with salsa. Veggie and vegan versions too.</p></div></a>
+    <a class="card" href="menu.html#hash"><img src="img/corned-beef-hash.jpg" alt="Corned beef hash topped with an egg and green onions" loading="lazy" width="528" height="528"><div class="card-body"><span class="tag">Hash time</span><div class="card-row"><h3>Corned Beef Hash</h3><span class="price">$17.95</span></div><p>Chopped corned beef, breakfast potatoes and green onions topped with two poached eggs. Or go for the house-smoked brisket hash.</p></div></a>
+    <a class="card" href="menu.html#specialties"><img src="img/quiche-lorraine.jpg" alt="A slice of quiche Lorraine on a white plate" loading="lazy" width="1200" height="900"><div class="card-body"><span class="tag">Breakfast specialties</span><div class="card-row"><h3>House-Made Quiche</h3><span class="price">$14.95</span></div><p>Spinach &amp; mushroom or Lorraine, baked in our own crust and served with one side.</p></div></a>
+    <a class="card" href="menu.html#griddle"><img src="img/cheese-blintzes.jpg" alt="Cheese blintzes with whipped cream, strawberries and berry compote" loading="lazy" width="800" height="800"><div class="card-body"><span class="tag">From the griddle</span><div class="card-row"><h3>Cheese Blintzes</h3><span class="price">$16.95</span></div><p>Three fresh crepes filled with sweet cheese, with warm berry compote and sour cream.</p></div></a>
+    <a class="card" href="menu.html#hot-sandwiches"><img src="img/reuben.jpg" alt="A stacked Reuben sandwich on grilled marble rye" loading="lazy" width="640" height="800"><div class="card-body"><span class="tag">Hot sandwiches</span><div class="card-row"><h3>Reuben</h3><span class="price">$17.95</span></div><p>Corned beef, sauerkraut, Swiss and thousand island on grilled marble rye, with your choice of side.</p></div></a>
+    <a class="card" href="menu.html#salads"><img src="img/thai-chicken-salad.jpg" alt="Thai chicken salad with noodles and vegetables in a wooden bowl" loading="lazy" width="900" height="900"><div class="card-body"><span class="tag">Entrée salads</span><div class="card-row"><h3>Thai Chicken Salad</h3><span class="price">$17.95</span></div><p>Chicken breast, mixed greens, crunchy veggies, noodles, cilantro and sesame seeds in Thai dressing.</p></div></a>
+  </div>
+</div></section>
+
+<section class="section sand story"><div class="wrap">
+  <img src="img/founders.jpg" alt="The Sunrise family in the bistro kitchen with a fresh tart and a board of berries" loading="lazy" width="800" height="800">
+  <div>
+    <p class="eyebrow">Our kitchen</p>
+    <h2>Forty-five years of doing it from scratch</h2>
+    <p>Sunrise opened in downtown Walnut Creek in 1981 and is still family-owned and operated. The reason regulars keep their table is simple: almost everything on the plate was made in this kitchen the same morning.</p>
+    <ul>
+      <li>Breads, pastries, quiches, croissants and morning buns baked fresh daily in house</li>
+      <li>Dressings, sauces, berry compote, whipped cream and mascarpone, all house-made</li>
+      <li>Brisket smoked in house, corned beef chopped for the hash, Mary's chicken on the grill</li>
+      <li>Gluten-free bread and a $2 gluten-free option on the griddle; vegan burritos, hashes and bowls</li>
+    </ul>
+    <div class="btn-row"><a class="btn btn-brick" href="menu.html">Browse the menu</a><a class="btn btn-ghost" href="hours.html">Plan your visit</a></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap split">
+  <div>
+    <p class="eyebrow">Sunrise Catering</p>
+    <h2>Breakfast, box lunches and buffets, delivered across the East Bay</h2>
+    <p class="lede">The same scratch kitchen feeds offices, celebrations and memorial receptions from Walnut Creek to the rest of the Bay Area. Diablo Magazine's Best of the East Bay caterer, 2018 through 2020.</p>
+    <ol class="steps">
+      <li><span class="n">1</span><div><b>Pick a menu or ask for a quote</b><span>Continental and hot breakfasts, box lunches from $18.50, buffets from $16.50 per person, party platters and holiday menus.</span></div></li>
+      <li><span class="n">2</span><div><b>Order by noon the business day before</b><span>Call (925) 930-6323, email cateringorders@sunrisebistrocatering.com, or use the quote form. The office answers Mon–Fri 9 AM–5 PM.</span></div></li>
+      <li><span class="n">3</span><div><b>We deliver seven days a week, 7 AM–4 PM</b><span>Pickup daily 7 AM–3 PM at the bistro. Staffed, full-service events are booked about three months ahead.</span></div></li>
+    </ol>
+    <div class="btn-row"><a class="btn btn-sun" href="catering.html#quote">Request a catering quote</a><a class="btn btn-outline" href="catering-menus.html">See catering menus</a></div>
+  </div>
+  <div class="mosaic">
+    <img src="img/tri-tip-platter.jpg" alt="Sliced grilled tri-tip on a catering platter" loading="lazy" width="1200" height="900">
+    <img src="img/pastry-box.jpg" alt="A box of house-baked pastries with a latte" loading="lazy" width="682" height="512">
+    <img src="img/crudite-cheese-platter.jpg" alt="Crudité and cheese platters at an event" loading="lazy" width="714" height="535">
+  </div>
+</div></section>
+
+<section class="section paper"><div class="wrap">
+  <div class="section-head"><div><p class="eyebrow">Recognition</p><h2>Walnut Creek keeps voting for Sunrise</h2></div><p><a href="https://www.yelp.com/biz/sunrise-bistro-walnut-creek-5" target="_blank" rel="noopener">Read reviews on Yelp</a></p></div>
+  <div class="awards">
+    <div class="award"><b>Best of the East Bay</b><span>Diablo Magazine · seven straight years</span><small>Caterer 2018, 2019, 2020 · Breakfast 2021, 2022, 2023, 2024</small></div>
+    <div class="award"><b>Best Breakfast or Brunch Spot</b><span>Walnut Creek Chamber of Commerce · Best of Walnut Creek 2025</span></div>
+    <div class="award"><b>Neighborhood Favorite</b><span>Nextdoor · 2022, 2023 and 2024</span></div>
+    <div class="award"><b>4.6 stars from 878 Google reviews</b><span>Tripadvisor's #1 breakfast restaurant in Walnut Creek</span><small>Catering: 4.7 stars on Yelp · Delivery: 4.8 on DoorDash</small></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="band">
+    <div><p class="eyebrow" style="color:#F6C9A8">Gift cards</p><h2>Give someone a Sunrise morning</h2><p>E-gift cards from $25 arrive by email or text in minutes, and work at the counter and online.</p></div>
+    <a class="btn btn-sun" href="https://order.toasttab.com/egiftcards/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Buy an e-gift card</a>
+  </div>
+</div></section>
+
+<section class="geo"><div class="wrap">
+  <p class="eyebrow" style="color:#F6C9A8">Downtown Walnut Creek</p>
+  <h2>In downtown Walnut Creek, across from The Container Store</h2>
+  <p>1559 Botelho Drive, Walnut Creek, CA 94596. Weekend mornings get busy; come early, or come for lunch.</p>
+  <div class="btn-row"><a class="btn btn-sun" href="https://www.google.com/maps/dir/?api=1&amp;destination=1559+Botelho+Dr%2C+Walnut+Creek%2C+CA+94596" target="_blank" rel="noopener">Directions in Google Maps</a><a class="btn btn-ghost" href="https://maps.apple.com/?daddr=1559+Botelho+Dr,+Walnut+Creek,+CA+94596" target="_blank" rel="noopener">Apple Maps</a><a class="btn btn-ghost" href="hours.html">Hours &amp; parking</a></div>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div>
+    <div class="brand-foot"><img src="img/logo-gold.png" alt="" width="60" height="60"><span><b>Sunrise</b><small>Bistro &amp; Catering</small></span></div>
+    <p>Family-owned and operated in downtown Walnut Creek since 1981. Scratch cooking, house-baked breads and pastries, and catering delivered across the East Bay.</p>
+    <p><a href="https://www.instagram.com/sunrisebistro/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@sunrisebistro/" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.yelp.com/biz/sunrise-bistro-walnut-creek-5" target="_blank" rel="noopener">Yelp (Bistro)</a> · <a href="https://www.yelp.com/biz/sunrise-catering-walnut-creek-2" target="_blank" rel="noopener">Yelp (Catering)</a></p>
+  </div>
+  <div>
+    <h4>The Bistro</h4>
+    <p>1559 Botelho Drive<br>Walnut Creek, CA 94596<br>Across from The Container Store</p>
+    <p>Open daily 7 AM–3 PM<br>Online ordering 7:15 AM–2:30 PM</p>
+    <p>(925) 930-0122</p>
+  </div>
+  <div>
+    <h4>Catering Office</h4>
+    <p>Mon–Fri 9 AM–5 PM<br>(925) 930-6323<br>cateringorders@sunrisebistrocatering.com</p>
+    <p>Delivery daily 7 AM–4 PM<br>Pickup daily 7 AM–3 PM<br>Orders by noon the business day before</p>
+  </div>
+  <div>
+    <h4>Quick links</h4>
+    <ul>
+      <li><a href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order online</a></li>
+      <li><a href="menu.html">Bistro menu</a></li>
+      <li><a href="catering.html#quote">Request a catering quote</a></li>
+      <li><a href="catering-menus.html">Catering menus</a></li>
+      <li><a href="https://order.toasttab.com/egiftcards/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">E-gift cards</a></li>
+      <li><a href="hours.html">Hours, directions &amp; parking</a></li>
+      <li><a href="privacy.html">Privacy policy</a></li>
+    </ul>
+  </div>
+  <div class="legal"><span>© <span data-year>2026</span> Sunrise Bistro &amp; Catering · Joroda, Inc.</span><span>Kosher-style dishes are prepared in our kitchen, which is not a kosher kitchen. Closed July 4, Thanksgiving, Christmas and New Year's Day.</span></div>
+</div></footer>
+<div class="mobile-bar"><a class="btn btn-sun" href="https://order.toasttab.com/online/sunrise-bistro-catering-1559-botelho-dr" target="_blank" rel="noopener">Order Online</a><a class="btn btn-outline" href="menu.html">Menu</a><a class="btn btn-ghost" href="catering.html#quote">Catering</a></div>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+  var toggle=document.querySelector('.nav-toggle');
+  var nav=document.querySelector('.nav');
+  if(toggle&&nav){
+    toggle.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+    });
+    document.addEventListener('click',function(e){
+      if(nav.classList.contains('open')&&!nav.contains(e.target)&&!toggle.contains(e.target)){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}
+    });
+  }
+  var toastEl=document.querySelector('.toast');
+  function toast(msg){
+    if(!toastEl)return; toastEl.textContent=msg; toastEl.classList.add('show');
+    clearTimeout(toastEl._t); toastEl._t=setTimeout(function(){toastEl.classList.remove('show');},2200);
+  }
+  function copyText(text,btn){
+    function fallback(){
+      var ta=document.createElement('textarea'); ta.value=text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      var ok=false; try{ok=document.execCommand('copy');}catch(e){}
+      document.body.removeChild(ta);
+      toast(ok?'Copied':'Select the text and copy it');
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){toast('Copied');},fallback);
+    }else{fallback();}
+  }
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){copyText(btn.getAttribute('data-copy'),btn);});
+  });
+  var form=document.getElementById('quote-form');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var err=document.getElementById('quote-error');
+      var required=['q-name','q-phone','q-email','q-date','q-guests','q-service'];
+      var missing=required.filter(function(id){var el=document.getElementById(id);return !el||!el.value.trim();});
+      if(missing.length){
+        err.textContent='Please fill in your name, phone, email, event date, guest count and pickup or delivery.';
+        document.getElementById(missing[0]).focus(); return;
+      }
+      err.textContent='';
+      var v=function(id){var el=document.getElementById(id);return el?el.value.trim():'';};
+      var menus=Array.prototype.slice.call(form.querySelectorAll('input[name="menus"]:checked')).map(function(c){return c.value;}).join(', ')||'Not sure yet';
+      var lines=[
+        'Catering quote request — '+v('q-name')+(v('q-company')?' ('+v('q-company')+')':''),
+        'Phone: '+v('q-phone'),
+        'Email: '+v('q-email'),
+        'Event date: '+v('q-date')+(v('q-time')?' at '+v('q-time'):''),
+        'Guests: '+v('q-guests'),
+        'Service: '+v('q-service')+(v('q-address')?' — '+v('q-address'):''),
+        'Menus of interest: '+menus,
+        'Notes: '+(v('q-notes')||'—')
+      ];
+      var text=lines.join('\n');
+      var box=document.getElementById('quote-confirm');
+      document.getElementById('quote-text').value=text;
+      document.getElementById('quote-summary').textContent='Thanks, '+v('q-name').split(' ')[0]+'. On the live site this request goes straight to the catering office, which replies during office hours (Mon–Fri 9 AM–5 PM). For this draft, copy the request below and email it to cateringorders@sunrisebistrocatering.com.';
+      box.hidden=false; form.hidden=true;
+      box.scrollIntoView({behavior:'smooth',block:'start'});
+      var cb=document.getElementById('quote-copy');
+      if(cb){cb.onclick=function(){copyText(text,cb);};}
+      var again=document.getElementById('quote-again');
+      if(again){again.onclick=function(){box.hidden=true;form.hidden=false;form.reset();};}
+    });
+  }
+  var y=document.querySelector('[data-year]'); if(y){y.textContent=new Date().getFullYear();}
+  var path=location.pathname.split('/').pop()||'index.html';
+  document.querySelectorAll('.nav a[href]').forEach(function(a){
+    var href=a.getAttribute('href');
+    if(href===path||(path==='index.html'&&href==='index.html')){a.setAttribute('aria-current','page');}
+  });
+})();
+
+</script>
+</body>
+</html>
